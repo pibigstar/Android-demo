@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/startService"
+        android:onClick="doClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="startService" />
+    <Button
+        android:id="@+id/stopService"
+        android:onClick="doClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stopService" />
+
+    <TextView
+        android:id="@+id/text_bind"
+        android:layout_width="75dp"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:text="Bind" />
+
+    <Button
+        android:id="@+id/bindService"
+        android:onClick="doClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BindService" />
+    <Button
+        android:id="@+id/play"
+        android:onClick="doClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放" />
+    <Button
+        android:id="@+id/paush"
+        android:onClick="doClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停" />
+
+</LinearLayout>

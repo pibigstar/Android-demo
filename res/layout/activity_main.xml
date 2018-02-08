@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.example.demo.view.MarRunTextView
+        android:id="@+id/marunTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"    
+        android:text="@string/hello_world" />
+
+    <ImageButton
+        android:id="@+id/imgbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pibigstar" />
+
+    <AutoCompleteTextView
+        android:id="@+id/acTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:completionThreshold="2"
+        android:hint="请输入内容">
+    </AutoCompleteTextView>
+
+    <ToggleButton
+        android:id="@+id/tgBt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="已打开"
+        android:textOff="已关闭"
+        android:checked="false"
+         />
+
+    <Button
+        android:id="@+id/inBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转" />
+    
+      <TextView
+        android:id="@+id/dataText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接受第二个页面的返回值" />
+
+
+      <SeekBar
+          android:id="@+id/seekBar1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:max="100" />
+      
+      <Button
+          android:id="@+id/toDemoBt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="去测试页面" />
+    
+</LinearLayout >

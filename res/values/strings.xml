@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">测试</string>
+    <string name="hello_world">这是一个跑马灯，这是一个跑马灯，这是一个跑马灯，这是一个跑马灯，这是一个跑马灯。</string>
+    <string name="action_settings">Settings</string>
+    <string name="_">请输入内容</string>
+    <string name="demoMain_name">测试用例主界面</string>
+    <string name="listView_name">列表框</string>
+    <string name="add">增加</string>
+    <string name="bt_reset">重置</string>
+    <string name="bt_reduce">减少</string>
+    <string name="content">
+        Alt+/ -- Content Assist -- 内容提示（即所谓的智能感知）
+Alt+Down(Up) -- Move Lines Down(Up) -- 向下(上)移动选定的行（可为多行）
+Alt+Shift+N -- New Menu -- 显示“主菜单File-->New”菜单，即显示常用的新建项。 又见“New”。 
+Alt+Shift+J -- Add Javadoc Comment -- 加入Javadoc注释
+Alt+Shift+T -- Refactory -- 重构，会显示具体的重构项
+Alt+Shift+R -- Rename(Refactoring) -- 重命名，是重构的一项
+Alt+Shift+V -- Move(Refactoring) -- 将文件、目录等移动到指定位置
+Alt+Shift+X, J -- Run Java Application -- 运行Java应用程序
+Alt+Shift+X, Q -- Run Ant Build -- 运行Ant的Build文件
+Alt+Shift+X, P -- Run JUnit -- 运行JUnit
+Ctrl+/ -- Toggle Comment -- 产生/取消注释
+Ctrl+1 -- Quick Fix -- 该行有错误/警告，使用此快捷键后，会给出修改的建议。
+Ctrl+D -- Delete Line -- 删除选定的行
+Ctrl+Down(Up) -- Scroll Line Down(Up) -- 类似于用鼠标向下(上)拖动滚动条
+Ctrl+F6 -- Next Editor -- 在当前被编辑的文件之间进行切换
+Ctrl+F7 -- Next View -- 在当前透视图(Perspective)中的视图(View)之间进行切换
+Ctrl+F8 -- Next Perspective -- 在 透视图(Perspective)之间进行切换 
+Ctrl+F11 -- Run Last Launched -- 运行最近一个执行的Java应用程序或JavaBean
+Ctrl+H -- Open Search Dialog -- 打开搜索对话框
+Ctrl+L -- Go to Line -- 到达指定的行
+Ctrl+N -- New -- 新建，即显示“New”向导。又见“New Menu”。
+Ctrl+O -- Quick Outline -- 显示该类/接口的概况(Outline)
+Ctrl+S -- Save -- 保存当前文件 
+Ctrl+Shift+/ --  Add Block Comment -- 加入块注释
+Ctrl+Shift+\ --  Remove Block Comment -- 取消块注释
+Ctrl+Shift+F -- Formate Document -- 格式化文本
+Ctrl+Shift+L -- Show Key Assist -- 列出一些常用的快捷键，可以先学习这里面列出的快捷键。 
+Ctrl+Shift+O -- Organize Imports -- 整理导入。导入需要被导入的类型；清除未被使用的类型的导入语句。
+Ctrl+Shitf+R -- Open Resource(Searching) -- 搜索所有打开的工程中的所有文件，包括jar中的文件。
+Ctrl+Shitf+S -- Save all -- 保存当前被打开的所有文件 
+Ctrl+Shift+T -- Open Type(Searching) -- 搜索类/接口 
+F3 -- Open Declaration -- 显示到该标识符的声明处 
+        
+    </string>
+
+</resources>

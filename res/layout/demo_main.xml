@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/to_listViewBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="listview" />
+
+    <Button
+        android:id="@+id/to_dateTimeBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/to_listViewBt"
+        android:text="datetime" />
+
+    <Button
+        android:id="@+id/to_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/to_dateTimeBt"
+        android:text="gridview" />
+
+    <Button
+        android:id="@+id/to_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/to_listViewBt"
+        android:layout_below="@+id/to_listViewBt"
+        android:text="spinner" />
+
+    <Button
+        android:id="@+id/to_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/to_spinner"
+        android:layout_alignBottom="@+id/to_spinner"
+        android:layout_alignLeft="@+id/to_dateTimeBt"
+        android:text="Progress" />
+
+    <Button
+        android:id="@+id/to_webView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/to_progress"
+        android:layout_alignBottom="@+id/to_progress"
+        android:layout_alignLeft="@+id/to_gridview"
+        android:text="webView" />
+
+    <Button
+        android:id="@+id/to_alter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/to_spinner"
+        android:text="alterDialog" />
+
+    <Button
+        android:id="@+id/to_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/to_alter"
+        android:layout_alignBottom="@+id/to_alter"
+        android:layout_toRightOf="@+id/to_alter"
+        android:text="viewPager" />
+
+    <Button
+        android:id="@+id/to_scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/to_viewPager"
+        android:layout_alignBottom="@+id/to_viewPager"
+        android:layout_toRightOf="@+id/to_viewPager"
+        android:text="scrollView" />
+
+    <Button
+        android:id="@+id/to_userlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/to_alter"
+        android:text="userlogin" />
+
+    <Button
+        android:id="@+id/to_SQLite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/to_userlogin"
+        android:layout_alignBottom="@+id/to_userlogin"
+        android:layout_toLeftOf="@+id/to_webView"
+        android:text="SQLite" />
+
+    <Button
+        android:id="@+id/to_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/to_SQLite"
+        android:layout_alignBottom="@+id/to_SQLite"
+        android:layout_alignLeft="@+id/to_webView"
+        android:text="Broadcast" />
+
+    <Button
+        android:id="@+id/to_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/to_userlogin"
+        android:text="Service" />
+
+</RelativeLayout>

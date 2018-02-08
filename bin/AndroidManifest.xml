@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+    
+    <!-- 配置权限 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!-- 设置应用的主入口 -->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.demo.DemoMainActivity"
+            android:label="@string/demoMain_name" >
+        </activity>
+        <activity android:name="com.example.demo.activity.DateTimePickerActivity"></activity>
+        <activity android:name="com.example.demo.activity.GridViewActivity"></activity>
+        <activity android:name="com.example.demo.activity.ListViewActivity"></activity>
+        <activity android:name="com.example.demo.activity.ProgressActivity"></activity>
+        <activity android:name="com.example.demo.activity.SecondActivity"></activity>
+        <activity android:name="com.example.demo.activity.SpinnerActivity"></activity>
+        <activity android:name="com.example.demo.activity.WebViewActivity"></activity>
+        <activity android:name="com.example.demo.activity.AlterDialogActivity"></activity>
+        <activity android:name="com.example.demo.activity.ViewPagerActivity"></activity>
+        <activity android:name="com.example.demo.activity.ScrollViewActivity"></activity>
+        <activity android:name="com.example.demo.activity.UserLoginActivity"></activity>
+        <activity android:name="com.example.demo.dao.SQLiteDemo"></activity>
+        <activity android:name="com.example.demo.activity.BroadcastActivity"></activity>
+        <activity android:name="com.example.demo.activity.ServiceActivity"></activity>
+       
+        <receiver android:name="com.example.demo.broadcast.MsgOneReceiver">
+            <intent-filter>
+                <action android:name="msg_one"></action>
+            </intent-filter>
+            
+        </receiver>
+        <service android:name="com.example.demo.service.MyStartService"></service>
+        <service android:name="com.example.demo.service.MyBindService"></service>
+    </application>
+
+</manifest>
