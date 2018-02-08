@@ -7,8 +7,12 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="21" />
     
-    <!-- 配置权限 访问网络的权限 -->
+    <!-- 配置权限 -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -43,13 +47,14 @@
         <activity android:name="com.example.demo.dao.SQLiteDemo"></activity>
         <activity android:name="com.example.demo.activity.BroadcastActivity"></activity>
         <activity android:name="com.example.demo.activity.ServiceActivity"></activity>
+        <activity android:name="com.example.demo.activity.SystemServiceActivity"></activity>
        
         <receiver android:name="com.example.demo.broadcast.MsgOneReceiver">
             <intent-filter>
                 <action android:name="msg_one"></action>
             </intent-filter>
-            
         </receiver>
+        
         <service android:name="com.example.demo.service.MyStartService"></service>
         <service android:name="com.example.demo.service.MyBindService"></service>
     </application>

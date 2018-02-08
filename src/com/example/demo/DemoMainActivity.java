@@ -9,6 +9,7 @@ import com.example.demo.activity.ProgressActivity;
 import com.example.demo.activity.ScrollViewActivity;
 import com.example.demo.activity.ServiceActivity;
 import com.example.demo.activity.SpinnerActivity;
+import com.example.demo.activity.SystemServiceActivity;
 import com.example.demo.activity.UserLoginActivity;
 import com.example.demo.activity.ViewPagerActivity;
 import com.example.demo.activity.WebViewActivity;
@@ -36,6 +37,7 @@ public class DemoMainActivity extends Activity{
 	private Button sqliteBt;	
 	private Button broadcastBt;	
 	private Button serviceBt;	
+	private Button systemServiceBt;	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -172,6 +174,16 @@ public class DemoMainActivity extends Activity{
 				Intent intent = new Intent(DemoMainActivity.this,ServiceActivity.class);
 				startActivity(intent);
 				
+			}
+		});
+		
+		systemServiceBt = (Button) findViewById(R.id.to_systemservice);
+		systemServiceBt.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(DemoMainActivity.this,SystemServiceActivity.class);
+				startActivity(intent);
 			}
 		});
 	}
