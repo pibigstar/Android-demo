@@ -48,6 +48,7 @@
         <activity android:name="com.example.demo.activity.BroadcastActivity"></activity>
         <activity android:name="com.example.demo.activity.ServiceActivity"></activity>
         <activity android:name="com.example.demo.activity.SystemServiceActivity"></activity>
+        <activity android:name="com.example.demo.activity.GestureDetectorActivity"></activity>
        
         <receiver android:name="com.example.demo.broadcast.MsgOneReceiver">
             <intent-filter>

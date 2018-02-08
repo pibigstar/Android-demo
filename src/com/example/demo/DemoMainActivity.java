@@ -3,6 +3,7 @@ package com.example.demo;
 import com.example.demo.activity.AlterDialogActivity;
 import com.example.demo.activity.BroadcastActivity;
 import com.example.demo.activity.DateTimePickerActivity;
+import com.example.demo.activity.GestureDetectorActivity;
 import com.example.demo.activity.GridViewActivity;
 import com.example.demo.activity.ListViewActivity;
 import com.example.demo.activity.ProgressActivity;
@@ -18,6 +19,7 @@ import com.example.demo.dao.SQLiteDemo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -38,6 +40,7 @@ public class DemoMainActivity extends Activity{
 	private Button broadcastBt;	
 	private Button serviceBt;	
 	private Button systemServiceBt;	
+	private Button gestureDetectorBt;	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -186,6 +189,29 @@ public class DemoMainActivity extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+		gestureDetectorBt = (Button) findViewById(R.id.to_gesture);
+		gestureDetectorBt.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(DemoMainActivity.this,GestureDetectorActivity.class);
+				startActivity(intent);
+			}
+		});
+	}
+	/**
+	 * 创建菜单
+	 */
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		
+		menu.add(1, 1, 1, "菜单1");
+		menu.add(1, 2, 2, "菜单2");
+		menu.add(1, 3, 3, "菜单3");
+		//通过xml配置菜单
+		//getMenuInflater().inflate(R.menu.main, menu);
+		return super.onCreateOptionsMenu(menu);
 	}
 
 }

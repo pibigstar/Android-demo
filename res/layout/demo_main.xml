@@ -121,4 +121,13 @@
         android:layout_alignLeft="@+id/to_progress"
         android:text="systemservice" />
 
+    <Button
+        android:id="@+id/to_gesture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/to_systemservice"
+        android:layout_alignBottom="@+id/to_systemservice"
+        android:layout_toRightOf="@+id/to_systemservice"
+        android:text="GestureDetector" />
+
 </RelativeLayout>
